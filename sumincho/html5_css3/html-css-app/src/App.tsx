@@ -1,12 +1,8 @@
 import './App.css'
 
 // 실행 방법: npm run dev
-// 실행 이후 나타나는 Local: 
-http://localhost/
-:숫자/ 가 있음
-// 
-http://localhost/
-:숫자/ 를 웹 브라우저에 입력해야 페이지가 보입니다.
+// 실행 이후 나타나는 Local: http://localhost:숫자/ 가 있음
+// http://localhost:숫자/ 를 웹 브라우저에 입력해야 페이지가 보입니다.
 
 // 그리고 현재 구성 특성 상 웹 브라우저를 그냥 켜놓고
 // 코드만 바꾸면 알아서 페이지가 코드에 따라 변경됩니다.
@@ -30,6 +26,23 @@ function App() {
         {/* 실제 여러 사람들과 개발 할 때 내 머리속의 생각이 공유되지 않기 때문 */}
         {/* 시간이 지나더라도 해당 파트가 무엇인지 기록을 해두기 위해 사용함. */}
         <p>단락 paragraph의 역할입니다.</p>
+
+        {/* 리스트(list) */}
+        {/* ul = unordered list */}
+        <ul>
+          <li>리스트 1</li>
+          <li>리스트 2</li>
+          <li>리스트 3</li>
+          <li>리스트 4</li>
+        </ul>
+
+        {/* ol = ordered list */}
+        <ol>
+          <li>리스트 1</li>
+          <li>리스트 2</li>
+          <li>리스트 3</li>
+          <li>리스트 4</li>
+        </ol>
       </div>
     </>
   )
