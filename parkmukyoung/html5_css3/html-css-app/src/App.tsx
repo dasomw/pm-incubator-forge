@@ -14,14 +14,15 @@ function App() {
 
         <p>단락 paragraph의 역할입니다.</p>
 
-        <ul>
-          <ol>리스트 1</ol>
-          <ol>리스트 2</ol>
-          <ol>리스트 3</ol>
-          <li>리스트 4</li>
-          <li>리스트 5</li>
-          <li>리스트 6</li>
-        </ul>
+        <ol>
+          <li>리스트 1</li>
+        </ol>
+
+        <div className="box">
+          <h2>CSS 속성 적용</h2>
+          <p>CSS는 HTML요소를 스타일링 하기 위한 목적으로 사용</p>
+          <a href='https://www.w3schools.com/' target="_blank">HTML/CSS 학습 사이트</a>
+        </div>
       </div>
     </>
   )
