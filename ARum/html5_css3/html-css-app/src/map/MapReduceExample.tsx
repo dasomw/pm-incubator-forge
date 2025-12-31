@@ -1,30 +1,23 @@
-export const MapExample = () => {
-    // 순수 javascript인 경우엔 아래와 같이 표현해도 됩니다.
-    // let number_array = [2, 4, 6, 8, 10]
-    // 저기 옆에 있는 ':number[]' <- 이건 뭐지?
-
-    // 해당 요소부터는 typescript 특성을 가짐.
-    // typescript라는 녀석은 tyep을 명시하는 작업입니다.
-    // 결론적으로 ':number[]' 는 숫자 배열임을 명시하는 행위입니다.
+export const MapReduceExample = () => {
     let number_array: number[] = [2, 4, 6, 8, 10]
 
-    // square(제곱) 결과 배열
-    // number_array.map()을 사용하면 아래와 같이 동작함.
-
-    // 1. number_array 내부에 요소들을 1개씩 꺼내옴.
-    // 2. num이라는 것이 2 혹은 4, 6, 8, 10이 됨을 의미함
-    // 3. => 를 통해 이 내용을 회살표 내용의 연산으로 적용함을 의미함
-    //    num * num = 각 요소의 제곱
-    let square_result_array: number[] = number_array.map(num => num * num)
+    // reduce의 경우엔 아래와 같이 연산됩니다.
+    // ((누산 대상, 배열의 요소) => 누산 대상 + 배열 요소, 초기값)
+    // accumulator의 시작값은 지정한 초기값으로 설정됨.
+    
+    // 실행 효율, Te 관점입니다.
+    // 앞서 만들었던 다소 복잡한 연산의 for loop 구성을 단순화 시킨 작업임.
+    let result_array: number =
+        number_array.reduce((accumulator, element) => accumulator + element, 0)
 
     return (
         <div>
-            <h3>javascript Map Function</h3>
+            <h3>javascript Reduce Function</h3>
 
             <pre>{
                 `
 number_array = ${number_array}
-suquare_result_array = ${square_result_array}
+result_array = ${result_array}
                 `
             }</pre>
         </div>
