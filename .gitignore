@@ -540,3 +540,6 @@ sketch
 
 # exclude .env
 .env
+
+# exclude .next
+/.next/
