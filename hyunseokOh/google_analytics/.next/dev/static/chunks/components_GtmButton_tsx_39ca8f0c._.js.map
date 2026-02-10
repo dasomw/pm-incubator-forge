@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/reallies/Documents/GitHub/pm-incubator-forge/hyunseokOh/google_analytics/components/GtmButton.tsx"],"sourcesContent":["'use client';\n\ndeclare global {\n    interface Window {\n        dataLayer?: any[];\n    }\n}\n\nexport default function GtmButton() {\n    const handleClick = () => {\n        window.dataLayer?.push({ event: 'button_click', button_name: 'test_button' });\n        alert('button_click 이벤트 전송 완료!');\n    };\n\n    return (\n        <button\n            onClick={handleClick}\n            className=\"flex h-12 w-full items-center justify-center rounded-full bg-blue-600 px-5 text-white transition-colors hover:bg-blue-700 md:w-[200px]\"\n        >\n            GA4 실습 (관측 장치)\n        </button>\n    );\n}"],"names":[],"mappings":";;;;;AAAA;;AAQe,SAAS;IACpB,MAAM,cAAc;QAChB,OAAO,SAAS,EAAE,KAAK;YAAE,OAAO;YAAgB,aAAa;QAAc;QAC3E,MAAM;IACV;IAEA,qBACI,6LAAC;QACG,SAAS;QACT,WAAU;kBACb;;;;;;AAIT;KAdwB"}}]
+}

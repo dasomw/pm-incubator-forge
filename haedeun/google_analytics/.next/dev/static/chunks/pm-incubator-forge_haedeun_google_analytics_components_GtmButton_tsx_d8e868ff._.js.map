@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/haede/pm-incubator-forge/haedeun/google_analytics/components/GtmButton.tsx"],"sourcesContent":["'use client';\r\n\r\ndeclare global {\r\n    interface Window {\r\n        dataLayer?: any[];\r\n    }\r\n}\r\n\r\nexport default function GtmButton() {\r\n    const handleClick = () => {\r\n        window.dataLayer?.push({ event: 'button_click', button_name: 'test_button' });\r\n        alert('button_click 이벤트 전송 완료!');\r\n    };\r\n\r\n    return (\r\n        <button\r\n            onClick={handleClick}\r\n            className=\"flex h-12 w-full items-center justify-center rounded-full bg-blue-600 px-5 text-white transition-colors hover:bg-blue-700 md:w-[200px]\"\r\n        >\r\n            GA4 실습 버튼\r\n        </button>\r\n    );\r\n}"],"names":[],"mappings":";;;;;AAAA;;AAQe,SAAS;IACpB,MAAM,cAAc;QAChB,OAAO,SAAS,EAAE,KAAK;YAAE,OAAO;YAAgB,aAAa;QAAc;QAC3E,MAAM;IACV;IAEA,qBACI,wPAAC;QACG,SAAS;QACT,WAAU;kBACb;;;;;;AAIT;KAdwB"}}]
+}
